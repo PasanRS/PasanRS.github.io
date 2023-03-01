@@ -4,8 +4,7 @@
 	<meta charset="UTF-8">
 	<title>S.I.T.;A. Simulation Integrated Technologies</title>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flip Book - Samuel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flipbookjs@3.0.0/dist/flipbook.min.js"></script>
 	<style>
 		#flipbook {
 			width: 420px;
@@ -18,6 +17,16 @@
 	
 <body>
 	<!-- Define the container for the flipbook -->
+	<script>
+		// Replace "path/to/your/pdf/file.pdf" with the path to your PDF file
+		var flipbook = new flipbook({
+			pages: "EBook.pdf",
+			container: "#flipbook",
+			width: 840,
+			height: 1200,
+			scale: "auto",
+		});
+	</script>
 	
 <div class="flipbookkk">
     <h3 class="flipbookkk-title">S.I.T.;A. Simulation Integrated Technologies</h3>

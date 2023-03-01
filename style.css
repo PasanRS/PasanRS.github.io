@@ -1,9 +1,9 @@
-.flipbook-container {
+.flip-book-container {
   position: relative;
   overflow: hidden;
 }
 
-.flipbook-page-wrapper {
+.flip-book-page-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@
   transform-style: preserve-3d;
 }
 
-.flipbook-page {
+.flip-book-page {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,25 +25,25 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
-.flipbook-page.flipbook-page-prev {
+.flip-book-page.flipbook-page-prev {
   transform: rotateY(-180deg) translateX(-100%);
 }
 
-.flipbook-page.flipbook-page-next {
+.flip-book-page.flipbook-page-next {
   transform: rotateY(0) translateX(100%);
 }
 
-.flipbook-page.flipbook-page-current {
+.flip-book-page.flipbook-page-current {
   z-index: 2;
   transform: none !important;
 }
 
-.flipbook-page.flipbook-page-next .flipbook-page-content,
-.flipbook-page.flipbook-page-prev .flipbook-page-content {
+.flip-book-page.flip-book-page-next .flip-book-page-content,
+.flip-book-page.flip-book-page-prev .flip-book-page-content {
   opacity: 0;
 }
 
-.flipbook-page-content {
+.flip-book-page-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -55,7 +55,7 @@
   overflow: auto;
 }
 
-.flipbook-page-loading {
+.flip-book-page-loading {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -63,7 +63,7 @@
   text-align: center;
 }
 
-.flipbook-page-loading .spinner {
+.flip-book-page-loading .spinner {
   display: inline-block;
   border: 4px solid #f3f3f3;
   border-top: 4px solid #3498db;
